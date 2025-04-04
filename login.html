@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Change Password</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 class="main-title">АВТОРИЗАЦИЯ</h1>
+    <div class="container">
+        <!-- Форма авторизации -->
+        <div class="window">
+            <div class="window-header">
+                <div class="window-header-content">
+                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                    <h2>Вход в аккаунт</h2>
+                </div>
+                <button class="close-button">
+                    <img src="img/close_button.png" alt="Закрыть">
+                </button>
+            </div>
+            <div class="window-content">
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="username">Логин пользователя</label>
+                        <div class="input-wrapper">
+                            <input type="text" id="username" placeholder="Введите логин">
+                            <button type="button" class="clear-input">
+                                <img src="img/close_input.png" alt="Очистить">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <div class="input-wrapper">
+                            <input type="password" id="password" placeholder="Введите пароль">
+                            <button type="button" class="clear-input">
+                                <img src="img/close_input.png" alt="Очистить">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="main-button" id="login-button">ВОЙТИ</button>
+                    <div class="additional-buttons">
+                        <button type="button" class="main-button" id="register-button">РЕГИСТРАЦИЯ</button>
+                        <button type="button" class="main-button" id="change-password-buttonS">СМЕНА ПАРОЛЯ</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

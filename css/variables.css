@@ -1,0 +1,22 @@
+:root {
+    --windowBackgroud: #EAE8D6;
+    --windowNotepadBackground: #FEFCF4;
+    --windowStroke: #0162F5;
+    --windowGradient: linear-gradient(to bottom,
+            #3490FF 0%,
+            #0162F5 22%,
+            #0057EB 55%,
+            #0162F5 82%,
+            #0449B2 100%);
+
+    --inputStoke: rgba(28, 26, 26, 40%);
+    --inputBackground: #FEFCF4;
+
+    --textMain: #232323;
+    --whiteText: #FEFCF4;
+    --greenText: #70C05A;
+    --redText: #EE524F;
+
+    --buttonStoke: #557D9E;
+    --buttonBackground: #FEFCF4;
+}

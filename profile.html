@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Change Password</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <h1 class="main-title">ЛИЧНЫЙ КАБИНЕТ</h1>
+    <div class="container">
+        <!-- Действия -->
+        <div class="window">
+            <div class="window-header">
+                <h2>Действия</h2>
+                <button class="close-button">
+                    <img src="img/close_button.png" alt="Закрыть">
+                </button>
+            </div>
+            <div class="window-content actions-content">
+                <button class="main-button" id="change-button">СМЕНИТЬ ПАРОЛЬ</button>
+                <button class="main-button" id="rating-button">ПОСМОТРЕТЬ РЕЙТИНГ</button>
+                <button class="main-button" id="logout-button">ВЫЙТИ</button>
+            </div>
+        </div>
+
+        <!-- Информация о пользователе -->
+        <div class="window notepad">
+            <div class="window-header">
+                <div class="window-header-content">
+                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                    <h2>Информация о пользователе</h2>
+                </div>
+                <button class="close-button">
+                    <img src="img/close_button.png" alt="Закрыть">
+                </button>
+            </div>
+            <div class="window-content about-content">
+                <p>Логин: nickfilon2005</p>
+                <p>Количество смен пароля: 15</p>
+                <p>Последняя смена пароля: 20.03.2024</p>
+            </div>
+        </div>
+
+        <!-- Стена сообщений -->
+        <div class="window">
+            <div class="window-header">
+                <div class="window-header-content">
+                    <img src="img/posts.png" alt="Notepad" class="header-icon">
+                    <h2>Стена сообщений</h2>
+                </div>
+                <button class="close-button">
+                    <img src="img/close_button.png" alt="Закрыть">
+                </button>
+            </div>
+            <div class="window-content message-content">
+                <div class="message-wall">
+                    <div class="message">
+                        <!--  -->
+                    </div>
+                    <div class="message">
+                        <!--  -->
+                    </div>
+                </div>
+                <form class="message-form">
+                    <div class="input-wrapper">
+                        <input type="text" id="message" placeholder="Введите сообщение">
+                        <button type="button" class="clear-input">
+                            <img src="img/close_input.png" alt="Очистить">
+                        </button>
+                    </div>
+                    <button type="submit" class="main-button">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

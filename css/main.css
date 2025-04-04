@@ -1,0 +1,277 @@
+body {
+    background: url('../img/background main.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.main-title {
+    color: var(--whiteText);
+    font-size: 64px;
+    letter-spacing: 10%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.window {
+    box-sizing: border-box;
+    background: var(--windowBackgroud);
+    border: 3px solid var(--windowStroke);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.notepad {
+    background: var(--windowNotepadBackground);
+}
+
+.window-header {
+    background: var(--windowGradient);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-header h2 {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.window-header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.close-button img:hover {
+    opacity: 70%;
+}
+
+.window-content {
+    padding: 20px;
+}
+
+.actions-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-button {
+    width: 100%;
+    height: 54px;
+    background: var(--buttonBackground);
+    border: 2px solid var(--buttonStoke);
+    border-radius: 5px;
+    color: var(--textMain);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background: var(--windowBackgroud);
+    border-color: var(--windowStroke);
+}
+
+.additional-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.about-content {
+    color: var(--textMain);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about-content li {
+    margin-bottom: 10px;
+}
+
+.requirements-list {
+    color: var(--textMain);
+    font-size: 20px;
+}
+
+.requirements-list li {
+    margin-bottom: 15px;
+}
+
+
+/* Стили формы */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: var(--textMain);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--inputBackground);
+    border: 1px solid var(--inputStoke);
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: var(--textMain);
+    outline: none;
+}
+
+.clear-input {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-input img {
+    width: 16px;
+}
+
+.clear-input img:hover {
+    opacity: 70%;
+}
+
+.submit-button {
+    width: 100%;
+    height: 54px;
+    background: var(--buttonBackground);
+    border: 2px solid var(--buttonStoke);
+    border-radius: 5px;
+    color: var(--textMain);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: var(--windowBackgroud);
+    border-color: var(--windowStroke);
+}
+
+/* Стили для требований к паролю */
+.requirement {
+    color: var(--redText);
+    position: relative;
+    padding-left: 25px;
+}
+
+.requirement::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: var(--redText);
+}
+
+.requirement.success {
+    color: var(--greenText);
+}
+
+.requirement.success::before {
+    content: '✓';
+    color: var(--greenText);
+}
+
+/* Стили для списка пользователей */
+.similar-users {
+    color: var(--textMain);
+    font-size: 20px;
+    line-height: 1.5;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.similar-users::-webkit-scrollbar {
+    width: 8px;
+}
+
+.similar-users::-webkit-scrollbar-track {
+    background: var(--windowBackgroud);
+    border-radius: 4px;
+}
+
+.similar-users::-webkit-scrollbar-thumb {
+    background: var(--buttonStoke);
+    border-radius: 4px;
+}
+
+.similar-users::-webkit-scrollbar-thumb:hover {
+    background: var(--windowStroke);
+}
+
+/* Стили для постов */
+.message-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.message-form {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
