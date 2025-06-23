@@ -1,0 +1,37 @@
+.requirement {
+    position: relative;
+    padding-left: 30px;
+    color: var(--errorColor); 
+}
+
+.requirement::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: var(--errorColor);
+    font-weight: bold;
+}
+
+.requirement.valid {
+    color: var(--successColor);
+}
+
+.requirement.valid::before {
+    content: '✓';
+    color: var(--successColor);
+}
+
+.similar-users {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: var(--similarUsersBgColor);
+    border-radius: var(--borderRadius);
+    font-size: 20px;
+    line-height: var(--defaultLineHeight);
+}
+
+.similar-users .loading {
+    text-align: center;
+    color: var(--greyText);
+    font-style: italic;
+}

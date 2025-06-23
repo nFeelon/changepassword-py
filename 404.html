@@ -14,9 +14,8 @@
 
 <body>
     <h1 class="main-title">404</h1>
-    <div class="container" style="flex-direction: column;">
-        <!-- Действия -->
-        <div class="window">
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        <div class="window" style="max-width: 500px; margin: 0 auto;">
             <div class="window-header">
                 <h2>Действия</h2>
                 <button class="close-button">
@@ -28,8 +27,7 @@
             </div>
         </div>
 
-        <!-- Количество смен пароля -->
-        <div class="window notepad">
+        <div class="window notepad" style="max-width: 500px; margin: 0 auto;">
             <div class="window-header">
                 <div class="window-header-content">
                     <img src="img/unfound.png" alt="Notepad" class="header-icon">
@@ -43,6 +41,9 @@
                 <p>Ресурс недоступен! Приносим свои извинения.</p>
             </div>
         </div>
+    </div>
+    <script src="js/close-buttons.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

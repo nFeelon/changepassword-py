@@ -10,96 +10,90 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rating.css">
 </head>
 
 <body>
     <h1 class="main-title">РЕЙТИНГ</h1>
     <div class="container">
-        <!-- Действия -->
-        <div class="window">
-            <div class="window-header">
-                <h2>Действия</h2>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
-            </div>
-            <div class="window-content actions-content">
-                <button class="main-button" id="back-button">НАЗАД</button>
-            </div>
-        </div>
-
-        <!-- Количество смен пароля -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>Количество смен пароля</h2>
+        <!-- Левая колонка с двумя окнами -->
+        <div class="left-column">
+            <div class="window">
+                <div class="window-header">
+                    <h2>Действия</h2>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
+                <div class="window-content actions-content">
+                    <button class="main-button" id="back-button">НАЗАД</button>
+                </div>
             </div>
-            <div class="window-content about-content">
-                <div class="rating-list">
-                    nickfilon2005 - 15 раз,
-                    Alexander512 - 12 раз,
-                    stas55 - 10 раз,
-                    wlad - 8 раз,
-                    kuuoer12 - 6 раз,
-                    avaz - 4 раза,
-                    nickfilon2005 - 15 раз,
-                    Alexander512 - 12 раз,
-                    stas55 - 10 раз,
-                    wlad - 8 раз,
-                    kuuoer12 - 6 раз,
-                    avaz - 4 раза
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>Количество смен пароля</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="window-content about-content">
+                    <div class="rating-list" id="rating-list">
+                        <!--  -->
+                        <div class="loading">Загрузка рейтинга...</div>
+                    </div>
+                    <div class="user-position" id="user-position">
+                        <!--  -->
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Требования к паролю -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>Требования к паролю на 20.03</h2>
+        
+        <!-- Правая колонка с двумя окнами в столбик -->
+        <div class="right-column">
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>Требования к паролю</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
-            </div>
-            <div class="window-content requirements-content">
-                <ul class="requirements-list">
-                    <li>Не менее 8 цифр</li>
-                    <li>Сумма цифр равна 35</li>
-                    <li>Включает текущий год</li>
-                    <li>Включает европейскую столицу</li>
-                    <li>Имя рекордсмена в беге на 100м</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Прошлые требования -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>Прошлые требования</h2>
+                <div class="window-content requirements-content">
+                    <div id="validation-rules-text">
+                        <!--  -->
+                        Требования к паролю загружаются...
+                    </div>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
             </div>
-            <div class="window-content requirements-content">
-                <ul class="requirements-list">
-                    <li>13.03 - Не менее 6 цифр, сумма цифр равна 21, включает текущий год</li>
-                    <li>06.03 - Не менее 10 цифр, сумма цифр равна 45, включает название месяца</li>
-                    <li>28.02 - Не менее 8 цифр, сумма цифр равна 36, включает день недели</li>
-                    <li>21.02 Не менее 12 цифр, сумма цифр равна 55, включает имя президент</li>
-                </ul>
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>Прошлые требования</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="window-content requirements-content">
+                    <ul class="past-requirements-list">
+                        <li>13.03 - Не менее 6 цифр, сумма цифр равна 21, включает текущий год</li>
+                        <li>06.03 - Не менее 10 цифр, сумма цифр равна 45, включает название месяца</li>
+                        <li>28.02 - Не менее 8 цифр, сумма цифр равна 36, включает день недели</li>
+                        <li>21.02 Не менее 12 цифр, сумма цифр равна 55, включает имя президент</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/validation-rules-loader.js"></script>
+    <script src="js/close-buttons.js"></script>
+    <script src="js/auth_utils.js"></script>
     <script src="js/rating.js"></script>
 </body>
 

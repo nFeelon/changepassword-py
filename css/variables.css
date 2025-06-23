@@ -1,4 +1,5 @@
 :root {
+    /* Основные цвета интерфейса */
     --windowBackgroud: #EAE8D6;
     --windowNotepadBackground: #FEFCF4;
     --windowStroke: #0162F5;
@@ -12,11 +13,39 @@
     --inputStoke: rgba(28, 26, 26, 40%);
     --inputBackground: #FEFCF4;
 
+    /* Цвета текста */
     --textMain: #232323;
     --whiteText: #FEFCF4;
     --greenText: #70C05A;
     --redText: #EE524F;
+    --greyText: #999;
 
+    /* Цвета кнопок */
     --buttonStoke: #557D9E;
     --buttonBackground: #FEFCF4;
+    
+    /* Цвета для сообщений */
+    --errorColor: #e74c3c;
+    --errorBgColor: rgba(231, 76, 60, 0.2);
+    --successColor: #2ecc71;
+    --successBgColor: rgba(46, 204, 113, 0.2);
+    --infoColor: #3498db;
+    --infoBgColor: rgba(52, 152, 219, 0.2);
+    
+    /* Цвета для рейтинга */
+    --tableBorderColor: rgba(255, 255, 255, 0.2);
+    --tableHeaderBgColor: rgba(0, 0, 0, 0.2);
+    --tableHoverBgColor: rgba(255, 255, 255, 0.1);
+    --currentUserBgColor: rgba(30, 213, 255, 0.1);
+    
+    /* Цвета для списка пользователей */
+    --similarUsersBgColor: rgba(255, 255, 255, 0.1);
+    
+    /* Общие значения */
+    --borderRadius: 5px;
+    --defaultPadding: 10px;
+    --defaultMargin: 15px;
+    --defaultFontSize: 16px;
+    --defaultLineHeight: 1.4;
+    --defaultTransition: 0.3s ease;
 }

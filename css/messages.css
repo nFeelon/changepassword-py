@@ -1,0 +1,30 @@
+.message-container {
+    margin-top: var(--defaultMargin);
+    padding: var(--defaultPadding);
+    border-radius: var(--borderRadius);
+    display: none;
+}
+
+.message-error {
+    background-color: var(--errorBgColor);
+    color: var(--errorColor);
+    border: 1px solid var(--errorColor);
+}
+
+.message-success {
+    background-color: var(--successBgColor);
+    color: var(--successColor);
+    border: 1px solid var(--successColor);
+}
+
+.message-info {
+    background-color: var(--infoBgColor);
+    color: var(--infoColor);
+    border: 1px solid var(--infoColor);
+}
+
+.message-text {
+    margin: 0;
+    font-size: var(--defaultFontSize);
+    line-height: var(--defaultLineHeight);
+}

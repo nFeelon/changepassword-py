@@ -15,85 +15,101 @@
 <body>
     <h1 class="main-title">CHANGE_PASSWORD.exe</h1>
     <div class="container">
-        <!-- Доступные действия -->
-        <div class="window">
-            <div class="window-header">
-                <h2>Доступные действия</h2>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
+        <div class="left-column">
+            <!-- Доступные действия -->
+            <div class="window">
+                <div class="window-header">
+                    <h2>Доступные действия</h2>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="window-content actions-content" id="actions-container">
+                    <!-- Кнопки для неавторизованных пользователей -->
+                    <div id="guest-actions" style="display: flex;">
+                        <button class="main-button" id="login-button">ВОЙТИ В АККАУНТ</button>
+                        <button class="main-button" id="register-button">РЕГИСТРАЦИЯ</button>
+                        <button class="main-button" id="change-password-button">СМЕНА ПАРОЛЯ</button>
+                        <button class="main-button" id="rating-button">ПОСМОТРЕТЬ РЕЙТИНГ</button>
+                    </div>
+
+                    <!-- Кнопки для авторизованных пользователей -->
+                    <div id="user-actions" style="display: none;">
+                        <button class="main-button" id="profile-button">ЛИЧНЫЙ КАБИНЕТ</button>
+                        <button class="main-button" id="change-password-button-auth">СМЕНА ПАРОЛЯ</button>
+                        <button class="main-button" id="rating-button-auth">ПОСМОТРЕТЬ РЕЙТИНГ</button>
+                        <button class="main-button" id="logout-button">ВЫЙТИ</button>
+                    </div>
+                </div>
             </div>
-            <div class="window-content actions-content">
-                <button class="main-button" id="login-button">ВОЙТИ В АККАУНТ</button>
-                <button class="main-button" id="register-button">РЕГИСТРАЦИЯ</button>
-                <button class="main-button" id="change-password-button">СМЕНА ПАРОЛЯ</button>
-                <button class="main-button" id="rating-button">ПОСМОТРЕТЬ РЕЙТИНГ</button>
+            <!-- Требования к паролю -->
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>Требования к паролю</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
+                </div>
+                <div class="window-content requirements-content">
+                    <div id="validation-rules-text">
+                        <!-- Требования к паролю загружаются динамически -->
+                        Требования к паролю загружаются...
+                    </div>
+                </div>
             </div>
+
         </div>
 
-        <!-- О проекте -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>О проекте</h2>
+        <div class="right-column">
+            <!-- О проекте -->
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>О проекте</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
+                <div class="window-content about-content">
+                    <p>Добро пожаловать в Change Password!</p>
+                    <p>Здесь пароли — это не просто защита, а настоящая битва за уникальность!</p>
+                    <p>Регистрируйся, придумывай пароль и смотри, кто ещё использует такую же комбинацию. Каждую неделю
+                        правила валидации меняются, и твоя задача — создать самый уникальный пароль.</p>
+                    <p>Что тебя ждёт:</p>
+                    <ul>
+                        <li>Профиль: Узнай, сколько раз пароль меняли, и оставляй сообщения на своей или чужой стене.
+                        </li>
+                        <li>Рейтинг: Соревнуйся за звание самого "взломанного" или создателя самого сложного пароля.
+                        </li>
+                        <li>Свобода действий: Заходи на страницы других игроков и меняй их пароли.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="window-content about-content">
-                <p>Добро пожаловать в Сhange Password!</p>
-                <p>Здесь пароли — это не просто защита, а настоящая битва за уникальность!</p>
-                <p>Регистрируйся, придумывай пароль и смотри, кто ещё использует такую же комбинацию. Каждую неделю
-                    правила валидации меняются, и твоя задача — создать самый уникальный пароль.</p>
-                <p>Что тебя ждёт:</p>
-                <ul>
-                    <li>Профили: Узнай, сколько раз пароль меняли, и оставляй сообщения на своей или чужой стене.</li>
-                    <li>Рейтинг: Соревнуйся за звание самого "взломанного" или создателя самого сложного пароля.</li>
-                    <li>Свобода действий: Заходи на страницы других игроков и меняй их пароли.</li>
-                </ul>
-            </div>
-        </div>
 
-        <!-- Требования к паролю -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>Требования к паролю на 20.03</h2>
+            <!-- Автор -->
+            <div class="window notepad">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/info.png" alt="Notepad" class="header-icon">
+                        <h2>Автор</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
-            </div>
-            <div class="window-content requirements-content">
-                <ul class="requirements-list">
-                    <li>Не менее 8 цифр</li>
-                    <li>Сумма цифр равна 35</li>
-                    <li>Включает текущий год</li>
-                    <li>Включает европейскую столицу</li>
-                    <li>Имя рекордсмена в беге на 100м</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Автор -->
-        <div class="window notepad">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/info.png" alt="Notepad" class="header-icon">
-                    <h2>Автор</h2>
+                <div class="window-content about-content">
+                    <a href="https://github.com/nFeelon" target="_blank">https://github.com/nFeelon</a>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
-            </div>
-            <div class="window-content about-content">
-                <a href="https://github.com/nFeelon" target="_blank">https://github.com/nFeelon</a>
             </div>
         </div>
     </div>
+    <script src="js/validation-rules-loader.js"></script>
+    <script src="js/auth_utils.js"></script>
     <script src="js/main.js"></script>
 </body>
 

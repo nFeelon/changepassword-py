@@ -1,0 +1,153 @@
+.message-wall {
+    display: flex;
+    flex-direction: column;
+    gap: var(--defaultPadding);
+    max-height: 500px;
+    overflow-y: auto;
+    margin-bottom: var(--defaultMargin);
+}
+
+.message {
+    background-color: var(--inputBackground);
+    border: 1px solid var(--inputStoke);
+    border-radius: var(--borderRadius);
+    padding: var(--defaultPadding);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.message-date {
+    color: var(--greyText);
+    font-size: 12px;
+}
+
+.delete-message {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-message img {
+    width: 12px;
+    opacity: 0.7;
+}
+
+.delete-message img:hover {
+    opacity: 1;
+}
+
+.message-text {
+    color: var(--textMain);
+    font-size: var(--defaultFontSize);
+    line-height: var(--defaultLineHeight);
+    word-break: break-word;
+}
+
+.message-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.message-form .input-wrapper {
+    flex: 1;
+}
+
+.message-form .main-button {
+    width: auto;
+    min-width: 120px;
+    height: 45px;
+}
+
+.message-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: var(--defaultMargin);
+    padding: var(--defaultPadding);
+    background-color: var(--inputBackground);
+    border-radius: var(--borderRadius);
+    border: 1px solid var(--inputStoke);
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#message-search {
+    width: 100%;
+    padding: 10px;
+    padding-right: 35px;
+    border: 1px solid var(--inputStoke);
+    border-radius: var(--borderRadius);
+    background-color: var(--inputBackground);
+    color: var(--textMain);
+}
+
+#search-clear {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-clear img {
+    width: 12px;
+    opacity: 0.7;
+}
+
+#search-clear img:hover {
+    opacity: 1;
+}
+
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-container label {
+    color: var(--textMain);
+    font-size: var(--defaultFontSize);
+}
+
+#sort-messages {
+    padding: 8px;
+    border: 1px solid var(--inputStoke);
+    border-radius: var(--borderRadius);
+    background-color: var(--inputBackground);
+    color: var(--textMain);
+    cursor: pointer;
+}
+
+.loading, .error, .no-data {
+    text-align: center;
+}
+
+.loading {
+    color: var(--greyText);
+}
+
+.error {
+    color: var(--errorColor);
+}
+
+.no-data {
+    color: var(--greyText);
+    font-style: italic;
+}

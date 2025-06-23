@@ -1,0 +1,58 @@
+.rating-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--defaultMargin);
+    font-size: var(--defaultFontSize);
+}
+
+.rating-table th, 
+.rating-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--tableBorderColor);
+}
+
+.rating-table th {
+    background-color: var(--tableHeaderBgColor);
+    font-weight: bold;
+}
+
+.rating-table tr:hover {
+    background-color: var(--tableHoverBgColor);
+}
+
+.rating-table tr.current-user {
+    background-color: var(--currentUserBgColor);
+}
+
+.rating-table tr.current-user td {
+    font-weight: bold;
+}
+
+.user-rating {
+    margin-top: var(--defaultMargin);
+    padding: var(--defaultPadding);
+    border-radius: var(--borderRadius);
+}
+
+.user-rating p {
+    margin: 5px 0;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: var(--greyText);
+}
+
+.error {
+    color: var(--errorColor);
+    text-align: center;
+    padding: 20px;
+}
+
+.no-data {
+    color: var(--greyText);
+    text-align: center;
+    padding: 20px;
+}

@@ -10,55 +10,60 @@
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/messages.css">
 </head>
 
 <body>
     <h1 class="main-title">АВТОРИЗАЦИЯ</h1>
     <div class="container">
-        <!-- Форма авторизации -->
-        <div class="window">
-            <div class="window-header">
-                <div class="window-header-content">
-                    <img src="img/notepad.png" alt="Notepad" class="header-icon">
-                    <h2>Вход в аккаунт</h2>
+        <div class="left-column" style="max-width: 500px; margin: 0 auto;">
+            <div class="window">
+                <div class="window-header">
+                    <div class="window-header-content">
+                        <img src="img/notepad.png" alt="Notepad" class="header-icon">
+                        <h2>Вход в аккаунт</h2>
+                    </div>
+                    <button class="close-button">
+                        <img src="img/close_button.png" alt="Закрыть">
+                    </button>
                 </div>
-                <button class="close-button">
-                    <img src="img/close_button.png" alt="Закрыть">
-                </button>
-            </div>
-            <div class="window-content">
-                <form class="auth-form">
-                    <div class="form-group">
-                        <label for="username">Логин пользователя</label>
-                        <div class="input-wrapper">
-                            <input type="text" id="username" placeholder="Введите логин">
-                            <button type="button" class="clear-input">
-                                <img src="img/close_input.png" alt="Очистить">
-                            </button>
+                <div class="window-content">
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="username">Логин пользователя</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="username" placeholder="Введите логин">
+                                <button type="button" class="clear-input">
+                                    <img src="img/close_input.png" alt="Очистить">
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Пароль</label>
-                        <div class="input-wrapper">
-                            <input type="password" id="password" placeholder="Введите пароль">
-                            <button type="button" class="clear-input">
-                                <img src="img/close_input.png" alt="Очистить">
-                            </button>
+                        <div class="form-group">
+                            <label for="password">Пароль</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="password" placeholder="Введите пароль">
+                                <button type="button" class="clear-input">
+                                    <img src="img/close_input.png" alt="Очистить">
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Запомнить меня</label>
-                    </div>
-                    <button type="submit" class="main-button" id="login-button">ВОЙТИ</button>
-                    <div class="additional-buttons">
-                        <button type="button" class="main-button" id="register-button">РЕГИСТРАЦИЯ</button>
-                        <button type="button" class="main-button" id="change-password-buttonS">СМЕНА ПАРОЛЯ</button>
-                    </div>
-                </form>
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Запомнить меня</label>
+                        </div>
+                        <button type="submit" class="main-button" id="login-button">ВОЙТИ</button>
+                        <div class="additional-buttons">
+                            <button type="button" class="main-button" id="register-button">РЕГИСТРАЦИЯ</button>
+                            <button type="button" class="main-button" id="change-password-buttonS">СМЕНА ПАРОЛЯ</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <script src="js/messages.js"></script>
+    <script src="js/close-buttons.js"></script>
+    <script src="js/auth_utils.js"></script>
     <script src="js/login.js"></script>
 </body>
 
